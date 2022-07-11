@@ -9,7 +9,7 @@ dotenv.config();
 
 // console.log(process.env.MONGO_URL)//other global variable which will contain the url string
 const app = express()
-const PORT=4000;
+const PORT=4000//process.env.PORT;
 app.use(express.json());
 
 // const movies=[
