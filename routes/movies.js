@@ -67,4 +67,4 @@ response.send(result)
 })
 
 
-export const moviesRouter =router
+export const moviesRouter = router;

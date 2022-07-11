@@ -4,13 +4,14 @@
 import express from 'express';//import 3rd party package
 import { MongoClient } from 'mongodb';
 import dotenv from "dotenv";
-import {moviesRouter} from "./routes/movies.js"
+import { moviesRouter } from "./routes/movies.js";
+
 dotenv.config();
 
 // console.log(process.env.MONGO_URL)//other global variable which will contain the url string
 const app = express()
 const PORT=process.env.PORT;
-app.use(express.json());
+
 
 // const movies=[
 //  {
