@@ -1,16 +1,16 @@
 //npm init -y to install package json
 // install express js --npm i express
-import cors from "cors"
+
 import express from 'express';//import 3rd party package
 import { MongoClient } from 'mongodb';
 import dotenv from "dotenv";
 import { moviesRouter } from "./routes/movies.js";
-
+import cors from "cors"
 dotenv.config();
-
 
 // console.log(process.env.MONGO_URL)//other global variable which will contain the url string
 const app = express()
+
 app.use(cors());
 
 const PORT=process.env.PORT;
