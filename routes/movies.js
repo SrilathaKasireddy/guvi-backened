@@ -39,10 +39,12 @@ router.get('/', async function (request, response) {
   // express.json() is a inbuilt middleware to convert data inside body to json format.
   router.post('/',async function (req, res) {
     const data=req.body;
-    console.log(data);
+    console.log(data)
+    
     //db.movies.insertMany(data);
     const result=await createNewMovies(data);
       res.send(result);
+      console.log(result)
     })
 
     export const moviesRouter=router;

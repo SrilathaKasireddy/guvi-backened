@@ -5,7 +5,7 @@ export async function createNewMovies(data) {
     return await client
     .db("Movies")
     .collection("Movies").
-    insertMany(data);
+    insertMany([data]);
 }
 export async function updateMovieById(id, data) {
     return await client
